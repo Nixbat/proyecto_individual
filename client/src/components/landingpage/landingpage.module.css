@@ -1,0 +1,101 @@
+.imgFondo {    
+    position: absolute;
+    background: url("../utils/img/fondoAzul.jpg");
+    height: 100%;
+    width: 100%;
+    filter: saturate(1.1);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;       
+}
+
+.titulo {
+    text-align: center;    
+    font-family: serif;
+    color: rgb(212, 165, 13);
+    font-size: 50px;
+    text-shadow: 3px 2px 3px black;
+    box-shadow: 5px 2px 8px 2px rgba(22, 21, 21, 0.491);
+}
+
+.principalContent {
+    height: min-content;
+    display: inline-table;
+    width: 50%;          
+    margin-top: 2%;      
+    padding: 1%; 
+    background-color: rgba(33, 50, 66, 0.462);
+    border-radius: 20px;      
+    border: 1px solid rgb(129, 121, 8);   
+    box-shadow: 5px 2px 8px 2px rgba(22, 21, 21, 0.491);
+}
+
+@keyframes intro {
+    0% {
+        transform: perspective(100vh) rotateX(10deg) translateY(90%);
+    }
+
+    100% {
+        transform: perspective(100vh) rotateX(10deg) translateY(-135%);
+    }
+}
+
+.landArticle {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    color: whitesmoke;       
+}
+
+.containerDiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: justify;
+    letter-spacing: 0.1rem;
+    animation: intro 40s linear infinite;
+}
+
+.landArticle h2,
+.landArticle h3 {
+    font-size: 2.1vw;
+    text-align: center;
+    font-family: serif;      
+    text-shadow: 3px 2px 3px black; 
+}
+
+.button {
+    cursor: pointer;
+    position: absolute;
+    margin-left: -490px;
+    margin-top: 450px;
+    width: 180px;
+    height: 45px;   
+    border-radius: 0.6rem;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;    
+    box-shadow: 5px 2px 8px 2px rgba(22, 21, 21, 0.491);
+    color: whitesmoke;
+    text-shadow: 3px 2px 3px black;
+    transition: 0.3s;
+    border: 1px solid rgb(129, 121, 8);
+    background-image: linear-gradient(to right, rgb(17, 87, 236), rgb(130, 186, 238), rgb(14, 171, 192), rgb(4, 0, 255));
+    background-size: 300% 100%;
+    transition: background-position 0.4s ease-in-out
+}
+
+.button:hover {
+    transform: scale(1.02);
+    box-shadow: 6px 3px 8px 2px rgba(22, 21, 21, 0.629);
+    filter: contrast(1.5);
+    filter: saturate(2.5);
+    background-position: 100% 0;
+}
+
+.button:active {
+    transform: scale(1.00);
+    box-shadow: 1px 1px 1px 1px rgba(22, 21, 21, 0.491);
+}

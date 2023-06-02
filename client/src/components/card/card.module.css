@@ -1,0 +1,60 @@
+.cardCont {
+  background-color: rgba(14, 30, 46, 0.507);
+  border: 1px solid rgb(129, 121, 8);
+  border-radius: 15px;
+  padding: 20px;
+  width: 65%;
+  height: 95%;
+  box-sizing: border-box;
+  z-index: 1;
+  color: white;    
+}
+
+.cardCont h1 {
+  margin-top: -8px;
+  font-size: 32px;
+  color: white;
+  background-color: rgba(14, 30, 46, 0.26);
+  border-radius: 15px;
+}
+
+.imgFlag {
+  width: 190px;
+  height: 120px;
+  filter: contrast(1.1);
+  filter: brightness(1.1);
+  filter: saturate(1.1);
+  border: 1px solid rgba(212, 165, 13, 0.845);
+  transition: background-color 300ms linear, transform 300ms ease-in-out;
+}
+
+.imgFlag:hover {
+  transform: scale(1.2);
+}
+
+.regionH3 {
+  background-color: rgba(14, 30, 46, 0.26);
+  border-radius: 15px;
+  box-sizing: border-box;
+  width: 50%;
+  height: 10%;
+  display: inline-block;
+  font-size: 20px;  
+}
+
+.infoIcon {
+  width: 8%;
+  height: 10%;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 1s;
+  margin-left: 10px;
+  margin-right: auto;
+  border: none;  
+  transition: background-color 300ms linear, transform 300ms ease-in-out;
+}
+
+.infoIcon:hover {
+  background-color: rgba(226, 202, 202, 0.486);
+  transform: scale(1.2);
+}
